@@ -9,9 +9,7 @@ layout: default
 
   {{ content }}
   <h2 class="post-list-heading">{{ page.list_title | default: "About" }}</h2>
-  <li>
     {{site.about}}
-  </li>
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Updates" }}</h2>
     <ul class="post-list">
