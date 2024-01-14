@@ -10,6 +10,8 @@ layout: default
   {{ content }}
   <h2 class="post-list-heading">{{ page.list_title | default: "About" }}</h2>
     {{site.about}}
+    {%- assign FImage = "assets/imgs/ShaluNigam.png" -%}
+    <img src="{{ FImage | relative_url }}" alt="Photo" class="featured-image-post">
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Updates" }}</h2>
     <ul class="post-list">
