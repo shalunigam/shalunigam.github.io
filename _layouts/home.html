@@ -9,9 +9,14 @@ layout: default
 
   {{ content }}
   <h2 class="post-list-heading">{{ page.list_title | default: "About" }}</h2>
+    {%- assign FImage = "assets/imgs/ShaluNigam.png" -%} 
+    <img src="{{- FImage | relative_url -}}" width="300" height="auto" alt="Photo" align=”left” HSPACE=”150” VSPACE=”150" style="float: left">
+    <br>
+    <br>
     {{site.about}}
-    {%- assign FImage = "assets/imgs/ShaluNigam.png" -%}
-    <img src="{{- FImage | relative_url -}}" alt="Photo" class="featured-image-post">
+    <br clear=left>
+    <br>
+    <br>
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Updates" }}</h2>
     <ul class="post-list">
